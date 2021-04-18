@@ -1,0 +1,44 @@
+{
+	"name": "docs",
+	"main": "worker.js",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint": "eslint --fix --ext .js,.vue,.html --ignore-path .gitignore ."
+	},
+	"lint-staged": {
+		"*.{js,vue,html}": "eslint --fix"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.3",
+		"@babel/plugin-transform-runtime": "^7.12.1",
+		"@nuxtjs/eslint-config": "^4.0.0",
+		"@nuxtjs/eslint-module": "^3.0.0",
+		"@vue/test-utils": "^1.1.0",
+		"babel-eslint": "^10.1.0",
+		"dotenv": "^8.2.0",
+		"eslint": "^7.11.0",
+		"eslint-config-prettier": "^6.14.0",
+		"eslint-plugin-html": "^6.1.0",
+		"eslint-plugin-nuxt": "^1.0.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"husky": "^4.3.0",
+		"lint-staged": "^10.4.2",
+		"node-sass": "^4.14.1",
+		"prettier": "^2.1.2",
+		"sass-loader": "^10.0.3"
+	},
+	"dependencies": {
+		"@nuxt/content-theme-docs": "^0.10.1",
+		"nuxt": "^2.15.2"
+	}
+}
