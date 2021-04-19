@@ -23,6 +23,8 @@
 		"@babel/plugin-transform-runtime": "^7.12.1",
 		"@nuxtjs/eslint-config": "^4.0.0",
 		"@nuxtjs/eslint-module": "^3.0.0",
+		"@nuxtjs/tailwindcss": "^4.0.3",
+		"@tailwindcss/typography": "^0.4.0",
 		"@vue/test-utils": "^1.1.0",
 		"babel-eslint": "^10.1.0",
 		"dotenv": "^8.2.0",
@@ -34,8 +36,10 @@
 		"husky": "^4.3.0",
 		"lint-staged": "^10.4.2",
 		"node-sass": "^4.14.1",
+		"postcss": "^8.2.10",
 		"prettier": "^2.1.2",
-		"sass-loader": "^10.0.3"
+		"sass-loader": "^10.0.3",
+		"vue-tailwind": "^2.2.1"
 	},
 	"dependencies": {
 		"@nuxt/content-theme-docs": "^0.10.1",
